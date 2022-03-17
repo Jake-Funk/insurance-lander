@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+    background: #002448;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bannerimg {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+}
+.phoneIcon {
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    background-color: #f9fcff;
+}
+
+.content p {
+    margin: 0px;
+    padding: 16px;
+}
+.content img {
+    width: 100%;
+}
+
+.footer {
+    background-color: #002448;
+}
+
+.footerimg {
+    max-width: 250px;
+    padding: 30px;
+}
+
+.legalInfo {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.footer p {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px; 
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
