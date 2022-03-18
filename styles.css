@@ -13,8 +13,7 @@ body {
     align-items: center;
 }
 .bannerimg {
-    width: 100%;
-    max-width: 350px;
+    width: min(350px, 75vw);
     padding: 10px;
 }
 .phoneIcon {
