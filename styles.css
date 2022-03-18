@@ -11,10 +11,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .bannerimg {
     width: min(350px, 75vw);
     padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .phoneIcon {
     padding: 10px;
@@ -37,19 +40,27 @@ body {
     background-color: #002448;
 }
 
+.footerimgcontainer {
+    display: flex;
+    justify-content: center;
+}
+
 .footerimg {
-    max-width: 250px;
+    width: min(50vw, 250px);
     padding: 30px;
 }
+
 
 .legalInfo {
     display: flex;
     justify-content: space-around;
     color: white;
     font-family: 'Ubuntu', sans-serif;
-
+    flex-wrap: wrap;
 }
-
+.legalInfo div {
+    margin: 20px;
+}
 .footer p {
     font-family: 'Ubuntu', sans-serif;
     padding: 20px; 
