@@ -5,6 +5,7 @@ const formSteps = [...multiStepForm.querySelectorAll("[data-step]")]
 let currentStep = formSteps.findIndex(step => {
     return step.classList.contains("active")
 })
+
 if ( currentStep < 0){
     currentStep = 0
     showCurrentStep()
@@ -23,6 +24,9 @@ multiStepForm.addEventListener('click', e => {
     if (allValid) {
         currentStep += incrementor
         showCurrentStep()
+        formSteps[currentStep].querySelector("[error-message]").classList.add("hide")
+    } else {
+        formSteps[currentStep].querySelector("[error-message]").classList.remove("hide")
     }
 })
 

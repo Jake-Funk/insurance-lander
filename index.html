@@ -24,37 +24,56 @@
                 <div class = "card" data-step>
                     <div class = "cardContent">
                         <h2 class = "cardTitle">Are you currently enrolled in Medicare parts A & B?</h2>
+                        <p style="color: red" error-message class="hide">Please select one of these options before you proceed.</p>
                         <div class = "inputArea">
+                            <input required id = "medicareYes" name = "medicare" value = "Yes" type = "radio">
                             <label for = "medicareYes" >
-                                <input required id = "medicareYes" name = "medicare" value = "Yes" type = "radio">
                                 Yes
                             </label>
+                            <input required id = "medicareNo" name = "medicare" value = "No" type = "radio">
                             <label for = "medicareNo" >
-                                <input required id = "medicareNo" name = "medicare" value = "No" type = "radio">
                                 No
                             </label>
+                            <input required id = "medicareUnsure" name = "medicare" value = "Unsure" type = "radio">
                             <label for = "medicareUnsure" >
-                                <input required id = "medicareUnsure" name = "medicare" value = "Unsure" type = "radio">
                                 I'm Not Sure
                             </label>
-                            <button type = "button" data-next>NEXT</button>
+                            <button type = "button" class="slide" data-next>
+                                <span data-next="">Next</span>
+                                <i class="icon-arrow-right" data-next>></i>
+                            </button>
                         </div>
                     </div>    
                 </div>
                 <div class = "card" data-step>
                     <div class = "cardContent">
                         <h2 class = "cardTitle">Gender?</h2>
+                        <p style="color: red" error-message class="hide">Please select one of these options before you proceed.</p>
                         <div class = "inputArea">
+                            <input required type = "radio" id = "Male"  name="gender" value = "male">
                             <label for = "Male">
-                                <input required type = "radio" id = "Male"  name="gender" value = "male">
                                 Male
                             </label>
+                            <input required type = "radio" id = "Female"  name = "gender" value = "female">
                             <label for = "Female">
-                                <input required type = "radio" id = "Female"  name = "gender" value = "female">
                                 Female
                             </label>
-                            <button type = "button" data-prev>PREV</button>
-                            <button type = "button" data-next>NEXT</button>
+                            <div>
+                                <button type = "button" class ="prev" data-prev>< PREV</button>
+                                <button type = "button" data-next>NEXT ></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" data-step>
+                    <div class = "cardContent">
+                        <h2 class = "cardTitle">What is your zip code?</h2>
+                        <div class = "inputArea">
+                            <input required type = "tel" size="5" min="10000" maxlength="5">
+                            <div>
+                                <button type = "button" class ="prev" data-prev>< PREV</button>
+                                <button type = "button" data-next>NEXT ></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,8 +82,10 @@
                         <h2 class = "cardTitle">When were you born?</h2>
                         <div class = "inputArea">
                             <input required type = "date">
-                            <button type = "button" data-prev>PREV</button>
-                            <button type = "button" data-next>NEXT</button>
+                            <div>
+                                <button type = "button" class ="prev" data-prev>< PREV</button>
+                                <button type = "button" data-next>NEXT ></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,9 +93,11 @@
                     <div class = "cardContent">
                         <h2 class = "cardTitle">FBNDT</h2>
                         <div class = "inputArea">
-                            <input type = "date">
-                            <button type = "button" data-prev>PREV</button>
-                            <button type = "button">SUBMIT</button>
+                            <input required type = "date">
+                            <div>
+                                <button type = "button" class ="prev" data-prev>< PREV</button>
+                                <input type = "submit"></input>
+                            </div>
                         </div>
                     </div>
                 </div>

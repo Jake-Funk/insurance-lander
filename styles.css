@@ -50,7 +50,6 @@ body {
 }
 
 .multiStepForm {
-    overflow: hidden;
     position: relative;
 }
 
@@ -87,17 +86,71 @@ body {
     width: min(75%, 400px);
     text-align: center;
 }
-.card button {
-    margin: 15px;
-    background-color: white;
-    border: 1px solid #002448;
-    border-radius: 10px;
-    font-family: 'Ubuntu', sans-serif;
-}
 
 .inputArea {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+.inputArea label {
+    border: 2px solid rgba(0, 36, 72, 0.1);
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    transition: .3s;
+    border-radius: 5px;
+    font-size: 20px;
+    width: min(25%, 250px);
+    cursor: pointer;
+}
+.inputArea button{
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: hsl(210, 75%, 25%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: .8s;
+}
+.inputArea button i {
+    opacity: 0;
+    transition: .4s;
+}
+.inputArea button:hover i {
+    opacity: 1;
+}
+.inputArea button:hover {
+    background-color: #001b36;
+    transform: translateX(5px);
+}
+.inputArea button.prev:hover {
+    transform: translateX(-5px);
+}
+input[type="radio"]:checked + label {
+    background-color: #002448;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: hsl(210, 75%, 25%);
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #001b36;
+    padding: 12px 22px;
 }
 
 .card.active {
@@ -110,8 +163,7 @@ body {
     justify-content: flex-start;
     align-items:center;
 }
-/*
-*/
+
 
 /* Footer styles */
 .footer {
@@ -149,6 +201,7 @@ body {
     display: none;
 }
 
+/* Animation Keyframes*/
 @keyframes slide {
     0% {
         opacity: 0;
