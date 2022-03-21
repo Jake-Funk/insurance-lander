@@ -12,7 +12,6 @@
     <div class = "banner">
         <img class = "bannerimg" src="assests/headerLogo.png">
         <div>
-            <img  class = "phoneIcon" src = "assests/phoneIcon.png">
             <div class = "callButton"><a href="tel:530-288-4797">Call Now to Get a Quote</a></div>
         </div>
     </div>
@@ -80,6 +79,83 @@
                         <h2 class = "cardTitle">When were you born?</h2>
                         <div class = "inputArea">
                             <input required type = "date">
+                            <div>
+                                <button type = "button" class ="prev" data-prev>< PREV</button>
+                                <button type = "button" data-next>NEXT ></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" data-step>
+                    <div class = "cardContent">
+                        <h2 class = "cardTitle">When would you like your new plan to start?</h2>
+                        <p  error-message class="errorMsg hide">Please select one of these options before you proceed.</p>
+                        <div class = "inputArea">
+                            <input required type = "radio" id = "immediately"  name="planStart" value = "immediate">
+                            <label for = "immediately">
+                                Immediately
+                            </label>
+                            <input required type = "radio" id = "twoMonths"  name = "planStart" value = "within2months">
+                            <label for = "twoMonths">
+                                Within 2 months
+                            </label>
+                            <input required type = "radio" id = "planUnsure"  name="planStart" value = "Unsure">
+                            <label for = "planUnsure">
+                                Not sure
+                            </label>
+                            <div>
+                                <button type = "button" class ="prev" data-prev>< PREV</button>
+                                <button type = "button" data-next>NEXT ></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" data-step>
+                    <div class = "cardContent">
+                        <h2 class = "cardTitle">What is your first and last name?</h2>
+                        <p  error-message class="errorMsg hide">Please enter your name before you proceed.</p>
+                        <div class = "inputArea">
+                            <label for = "custfName">
+                                First Name:
+                            </label>
+                            <input required type = "text" id="custfName">
+                            <br>
+                            <label for = "custlName">
+                                Last Name:
+                            </label>
+                            <input required type = "text" id="custlName">
+                            <div>
+                                <button type = "button" class ="prev" data-prev>< PREV</button>
+                                <button type = "button" data-next>NEXT ></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" data-step>
+                    <div class = "cardContent">
+                        <h2 class = "cardTitle">What is the best email address where we can reach you?</h2>
+                        <p  error-message class="errorMsg hide">Your email must be in the proper format: example@website.com</p>
+                        <div class = "inputArea">
+                            <input required type = "email" id="custfName">
+                            <label for = "custfName">
+                                Email Address
+                            </label>
+                            <div>
+                                <button type = "button" class ="prev" data-prev>< PREV</button>
+                                <button type = "button" data-next>NEXT ></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card" data-step>
+                    <div class = "cardContent">
+                        <h2 class = "cardTitle">What is the best phone number we can reach you at?</h2>
+                        <p  error-message class="errorMsg hide">Your email must be in the proper format: example@website.com</p>
+                        <div class = "inputArea">
+                            <input required type = "tel" id="custPhoneNum">
+                            <label for = "custPhoneNum">
+                                Phone number:
+                            </label>
                             <div>
                                 <button type = "button" class ="prev" data-prev>< PREV</button>
                                 <button type = "button" data-next>NEXT ></button>
